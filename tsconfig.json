@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "js",
+        "target": "ES2023",
+        "removeComments": true
+    }
+}

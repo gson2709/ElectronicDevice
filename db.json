@@ -1,0 +1,29 @@
+{
+    "type": [
+        {"id": 1, "name": "TV"},
+        {"id": 2, "name": "Smartphone"},
+        {"id": 3, "name": "Laptop"}
+    ],
+    "products": [
+        { "id": 1, "name": "ASUS TUF", "price": 18000000, "createDate": "2024-10-13", "image": "tuf.png", "typeId": 3},
+        { "id": 2, "name": "Acer Nitro 5", "price": 20000000, "createDate": "2024-10-10", "image": "nitro 5.png", "typeId": 3},
+        { "id": 3, "name": "HP Notebook 15", "price": 19000000, "createDate": "2024-09-15", "image": "notebook 15.png", "typeId": 3},
+        { "id": 4, "name": "MSI Gaming", "price": 21000000, "createDate": "2024-08-20", "image": "msi.png", "typeId": 3},
+        { "id": 5, "name": "DELL Inspiron 5565", "price": 16000000, "createDate": "2024-09-20", "image": "inspiron.png", "typeId": 2},
+        { "id": 6, "name": "ASUS TUF Gaming", "price": 20000000, "createDate": "2024-10-01", "image": "tuf.png", "typeId": 3},
+        { "id": 7, "name": "Lenovo Legion Y540", "price": 23000000, "createDate": "2024-07-10", "image": "lenovo.png", "typeId": 2},
+        { "id": 8, "name": "Razer Blade 15", "price": 35000000, "createDate": "2024-06-25", "image": "razer.png", "typeId": 1},
+        { "id": 9, "name": "MacBook Pro 16", "price": 45000000, "createDate": "2024-09-05", "image": "macbook.png", "typeId": 1},
+        { "id": 10, "name": "HP Omen 15", "price": 22000000, "createDate": "2024-10-05", "image": "omen.png", "typeId": 3},
+        { "id": 11, "name": "Acer Predator Helios 300", "price": 25000000, "createDate": "2024-08-15", "image": "predator.png", "typeId": 1},
+        { "id": 12, "name": "ASUS ROG Strix G15", "price": 32000000, "createDate": "2024-09-30", "image": "rog.png", "typeId": 3},
+        { "id": 13, "name": "MSI Stealth 15M", "price": 27000000, "createDate": "2024-07-25", "image": "stealth.png", "typeId": 1},
+        { "id": 14, "name": "Dell XPS 15", "price": 30000000, "createDate": "2024-10-11", "image": "xps.png", "typeId": 2},
+        { "id": 15, "name": "Samsung Galaxy Book Pro", "price": 18000000, "createDate": "2024-09-15", "image": "galaxybook.png", "typeId": 2}
+    ],
+    "banners": [
+        {"id": 1, "name": "msi.png"}, 
+        {"id": 2, "name": "omen.png"}, 
+        {"id": 3, "name": "inspiron.png"}
+    ]
+}
