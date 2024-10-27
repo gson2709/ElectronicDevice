@@ -1,29 +1,29 @@
 {
     "type": [
-        {"id": 1, "name": "TV"},
-        {"id": 2, "name": "Smartphone"},
-        {"id": 3, "name": "Laptop"}
+        {"id": 1, "name": "Tivi", "icon": "fa-solid fa-tv"},
+        {"id": 2, "name": "Smartphone", "icon": "fa-solid fa-mobile-screen-button"},
+        {"id": 3, "name": "Laptop", "icon": "fa-solid fa-laptop"}
     ],
     "products": [
         { "id": 1, "name": "ASUS TUF", "price": 18000000, "createDate": "2024-10-13", "image": "tuf.png", "typeId": 3},
         { "id": 2, "name": "Acer Nitro 5", "price": 20000000, "createDate": "2024-10-10", "image": "nitro 5.png", "typeId": 3},
         { "id": 3, "name": "HP Notebook 15", "price": 19000000, "createDate": "2024-09-15", "image": "notebook 15.png", "typeId": 3},
         { "id": 4, "name": "MSI Gaming", "price": 21000000, "createDate": "2024-08-20", "image": "msi.png", "typeId": 3},
-        { "id": 5, "name": "DELL Inspiron 5565", "price": 16000000, "createDate": "2024-09-20", "image": "inspiron.png", "typeId": 2},
+        { "id": 5, "name": "iPhone 14 Pro Max", "price": 27990000, "createDate": "2024-09-20", "image": "iphone.png", "typeId": 2},
         { "id": 6, "name": "ASUS TUF Gaming", "price": 20000000, "createDate": "2024-10-01", "image": "tuf.png", "typeId": 3},
-        { "id": 7, "name": "Lenovo Legion Y540", "price": 23000000, "createDate": "2024-07-10", "image": "lenovo.png", "typeId": 2},
-        { "id": 8, "name": "Razer Blade 15", "price": 35000000, "createDate": "2024-06-25", "image": "razer.png", "typeId": 1},
-        { "id": 9, "name": "MacBook Pro 16", "price": 45000000, "createDate": "2024-09-05", "image": "macbook.png", "typeId": 1},
+        { "id": 7, "name": "Samsung Galaxy S23 Ultra", "price": 26990000, "createDate": "2024-07-10", "image": "galaxyS23.png", "typeId": 2},
+        { "id": 8, "name": "Sony Bravia 55X75K 4K UHD", "price": 14900000, "createDate": "2024-06-25", "image": "bravia.png", "typeId": 1},
+        { "id": 9, "name": "Samsung Crystal UHD 4K 55AU8000", "price": 13500000, "createDate": "2024-09-05", "image": "crystal.png", "typeId": 1},
         { "id": 10, "name": "HP Omen 15", "price": 22000000, "createDate": "2024-10-05", "image": "omen.png", "typeId": 3},
-        { "id": 11, "name": "Acer Predator Helios 300", "price": 25000000, "createDate": "2024-08-15", "image": "predator.png", "typeId": 1},
+        { "id": 11, "name": "LG OLED 55C1", "price": 30900000, "createDate": "2024-08-15", "image": "oled.png", "typeId": 1},
         { "id": 12, "name": "ASUS ROG Strix G15", "price": 32000000, "createDate": "2024-09-30", "image": "rog.png", "typeId": 3},
-        { "id": 13, "name": "MSI Stealth 15M", "price": 27000000, "createDate": "2024-07-25", "image": "stealth.png", "typeId": 1},
-        { "id": 14, "name": "Dell XPS 15", "price": 30000000, "createDate": "2024-10-11", "image": "xps.png", "typeId": 2},
-        { "id": 15, "name": "Samsung Galaxy Book Pro", "price": 18000000, "createDate": "2024-09-15", "image": "galaxybook.png", "typeId": 2}
+        { "id": 13, "name": "TCL 4K UHD 55P725", "price": 10500000, "createDate": "2024-07-25", "image": "tcl.png", "typeId": 1},
+        { "id": 14, "name": "Oppo Reno8 T", "price": 8490000, "createDate": "2024-10-11", "image": "reno8.png", "typeId": 2},
+        { "id": 15, "name": "Vivo V25 Pro", "price": 9490000, "createDate": "2024-09-15", "image": "v25.png", "typeId": 2}
     ],
     "banners": [
-        {"id": 1, "name": "msi.png"}, 
-        {"id": 2, "name": "omen.png"}, 
-        {"id": 3, "name": "inspiron.png"}
+        {"id": 1, "name": "banner-lap.png"}, 
+        {"id": 2, "name": "banner-phone.png"}, 
+        {"id": 3, "name": "banner-tv.png"}
     ]
 }
