@@ -428,7 +428,8 @@ body {
 }
 .manufacturer .feat {
   text-align: center;
-  background-color: none;
+  border: 3px solid #d7d7d7;
+  border-radius: 60px;
 }
 .manufacturer .feat img {
   width: 120px;
