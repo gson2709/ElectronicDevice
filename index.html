@@ -1,227 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>ElecShop</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"></script>
-		<!-- Main Template CSS File -->
-		<link rel="stylesheet" href="css/style.css" />
-		<!-- Render All Elements Normally -->
-		<link rel="stylesheet" href="css/normalize.css" />
-		<!-- Font Awesome Library -->
-		<link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css" />
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<!-- Start Header -->
-		<div class="header">
-			<div class="container">
-				<a href="#home">
-					<img class="logo" src="images/logo.png" alt=""/>
-				</a>
-				<div class="links">
-					<span class="icon">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#type">Product Types</a></li>
-						<li><a href="#laptop">Laptop</a></li>
-						<li><a href="#phone">Phone</a></li>
-						<li><a href="#tv">TV</a></li>
-						<li><a href="#products">Products</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ElecShop</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<!-- Main Template CSS File -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Render All Elements Normally -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<!-- Font Awesome Library -->
+	<link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css" />
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+		rel="stylesheet" />
+</head>
+
+<body>
+	<!-- Start Header -->
+	<div class="header">
+		<div class="container">
+			<a href="#home">
+				<img class="logo" src="images/logo.png" alt="" />
+			</a>
+			<div class="links">
+				<span class="icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#type">Product Types</a></li>
+					<li><a href="#laptop">Laptop</a></li>
+					<li><a href="#phone">Phone</a></li>
+					<li><a href="#tv">TV</a></li>
+					<li><a href="#products">Products</a></li>
+					<li><a href="#manufacturer">Manufacturers</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- End Header -->
+	<!-- Start Landing Section -->
+	<section class="landing" id="home">
+		<div id="carouselExampleIndicators" class="carousel slide">
+			<div class="carousel-indicators" id="viewButton">
+			</div>
+			<div class="carousel-inner" id="viewBanner">
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section>
+	<!-- End Landing Section -->
+	<!-- Start Features -->
+	<section class="features" id="type">
+		<h2 class="special-heading">Product Types</h2>
+		<div class="container" id="viewType">
+		</div>
+	</section>
+	<!-- End Features -->
+	<!-- Start Services -->
+	<section class="services" id="laptop">
+		<div class="container">
+			<h2 class="special-heading">Laptop</h2>
+			<div class="services-content" id="viewRecentLaptop">
+			</div>
+		</div>
+	</section>
+	<!-- End Services -->
+	<!-- Start Phones -->
+	<section class="phone" id="phone" style="background-color: #f6f6f6;">
+		<div class="container">
+			<h2 class="special-heading">Phone</h2>
+			<div class="phone-content" id="viewRecentPhone">
+			</div>
+		</div>
+	</section>
+	<!-- End Phones -->
+	<!-- Start TV -->
+	<section class="services" id="tv">
+		<div class="container">
+			<h2 class="special-heading">TV</h2>
+			<div class="services-content" id="viewRecentTV">
+			</div>
+		</div>
+	</section>
+	<!-- End TV -->
+	<!-- Start Portfolio -->
+	<section class="portfolio" id="products">
+		<div class="container">
+			<h2 class="special-heading">Product</h2>
+			<div class="portfolio-content" id="viewPros">
+			</div>
+			<nav aria-label="Page navigation example" style="margin-top: 20px;">
+				<ul class="pagination justify-content-center" id="viewPagi">
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<!-- End Portfolio -->
+	<!-- Start Manufacturers  -->
+	<section class="manufacturer" id="manufacturer">
+		<h2 class="special-heading">Manufacturers</h2>
+		<div class="container" id="viewManufacturer">
+		</div>
+	</section>
+	<!-- End Manufacturers -->
+	<!-- Start About -->
+	<section class="about" id="about">
+		<div class="container">
+			<h2 class="special-heading">About</h2>
+			<div class="about-content">
+				<div class="image">
+					<img src="images/logo.png" alt="" />
+				</div>
+				<div class="text">
+					<p>
+						ElecShop is the destination for high-quality, genuine electronics from the world's top
+						brands. At ElecShop, we are committed to providing our customers with the latest cutting-edge
+						technology at competitive prices, along with professional customer service.
+					</p>
+					<hr />
+					<p>
+						The website is developed using programming languages such as HTML, CSS, and TypeScript with the
+						aim of providing an intuitive and user-friendly interface, making it easy for customers to
+						browse and purchase electronic devices.
+					</p>
 				</div>
 			</div>
 		</div>
-		<!-- End Header -->
-		<!-- Start Landing Section -->
-		<section class="landing" id="home">
-			<div id="carouselExampleIndicators" class="carousel slide">
-				<div class="carousel-indicators" id="viewButton">
-				</div>
-				<div class="carousel-inner" id="viewBanner">
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-		</section>
-		<!-- End Landing Section -->
-		<!-- Start Features -->
-		<section class="features" id="type">
-			<h2 class="special-heading">Product Types</h2>
-			<div class="container" id="viewType">
-			</div>
-		</section>
-		<!-- End Features -->
-		<!-- Start Services -->
-		<section class="services" id="laptop">
-			<div class="container">
-				<h2 class="special-heading">Laptop</h2>
-				<div class="services-content" id="viewRecentLaptop">
-				</div>
-			</div>
-		</section>
-		<!-- End Services -->
-		<!-- Start Phones -->
-		<section class="phone" id="phone" style="background-color: #f6f6f6;">
-			<div class="container">
-				<h2 class="special-heading">Phone</h2>
-				<div class="phone-content" id="viewRecentPhone">
-				</div>
-			</div>
-		</section>
-		<!-- End Phones -->
-		 <!-- Start TV -->
-		<section class="services" id="tv">
-			<div class="container">
-				<h2 class="special-heading">TV</h2>
-				<div class="services-content" id="viewRecentTV">
-				</div>
-			</div>
-		</section>
-		<!-- End TV -->
-		<!-- Start Portfolio -->
-		<section class="portfolio" id="products">
-			<div class="container">
-				<h2 class="special-heading">Product</h2>
-				<div class="portfolio-content" id="viewPros">
-				</div>
-				<nav aria-label="Page navigation example" style="margin-top: 20px;">
-					<ul class="pagination justify-content-center" id="viewPagi">
+	</section>
+	<!-- End About -->
+	<!-- Start Contact -->
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<!-- Company Information -->
+				<div class="col-md-3 mb-3">
+					<h5>Company Information</h5>
+					<ul class="list-unstyled">
+						<li>About Us</li>
+						<li>Sales Criteria</li>
+						<li>Strategic Partners</li>
+						<li>Center Network</li>
+						<li>Careers</li>
 					</ul>
-				</nav>
+				</div>
+
+				<!-- Policies -->
+				<div class="col-md-3 mb-3">
+					<h5>Policies</h5>
+					<ul class="list-unstyled">
+						<li>Delivery & Installation</li>
+						<li>Product Trials</li>
+						<li>Delivery Areas</li>
+						<li>Membership Customers</li>
+						<li>Installment Payment</li>
+					</ul>
+				</div>
+
+				<!-- Customer Support -->
+				<div class="col-md-3 mb-3">
+					<h5>Customer Support</h5>
+					<ul class="list-unstyled">
+						<li>Shopping Guide</li>
+						<li>Payment Methods</li>
+						<li>Customer Care</li>
+						<li>Product Exchange Policy</li>
+						<li>Membership Card Lookup</li>
+					</ul>
+				</div>
+
+				<!-- Information -->
+				<div class="col-md-3 mb-3">
+					<h5>Information</h5>
+					<ul class="list-unstyled">
+						<li>Contact</li>
+						<li>Partnerships</li>
+						<li>Awards</li>
+						<li>Information Security</li>
+						<li>Information Sharing</li>
+					</ul>
+				</div>
 			</div>
-		</section>
-		<!-- End Portfolio -->
-		<!-- Start About -->
-		<section class="about" id="about">
-			<div class="container">
-				<h2 class="special-heading">About</h2>
-				<p>Less is more work</p>
-				<div class="about-content">
-					<div class="image">
-						<img src="images/about.jpg" alt="" />
-					</div>
-					<div class="text">
-						<p>
-							Lorem ipsum dolor sit amet consectetur
-							adipisicing elit. Nihil nemo neque voluptate
-							tempora velit cum non, fuga vitae architecto
-							delectus sed maxime rerum impedit aliquam
-							obcaecati, aut excepturi iusto laudantium!
-						</p>
-						<hr />
-						<p>
-							Lorem ipsum dolor sit amet consectetur
-							adipisicing elit. Minus, sapiente. Velit iure
-							exercitationem dolores nesciunt dolore. Eum
-							officiis dolorum hic voluptate quaerat minima,
-							similique inventore esse, alias, sed quo
-							officia?
-						</p>
+
+			<div class="row">
+				<!-- Social Media Links -->
+				<div class="col-md-4 mb-3">
+					<h5>Follow Us</h5>
+					<p>Connect with us on social media:</p>
+					<a href="#" class="text-primary me-3"><i class="fab fa-facebook fa-2x"></i></a>
+					<a href="#" class="text-danger me-3"><i class="fab fa-google-plus-g fa-2x"></i></a>
+					<a href="#" class="text-primary me-3"><i class="fab fa-instagram fa-2x"></i></a>
+					<a href="#" class="text-danger me-3"><i class="fab fa-youtube fa-2x"></i></a>
+				</div>
+
+				<!-- Contact Form -->
+				<div class="col-md-4 mb-3">
+					<h5>Subscribe for Updates</h5>
+					<p>Receive the latest product information, promotional news, and more.</p>
+					<div class="input-group mb-3">
+						<input type="email" class="form-control" placeholder="Your Email">
+						<button type="submit" class="btn btn-danger">Subscribe</button>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End About -->
-		<!-- Start Contact -->
-		<section class="contact" id="contact">
-			<div class="container">
-				<h2 class="special-heading">Contact</h2>
-				<p>We are born to create</p>
-				<div class="info">
-					<p class="label">Feel free to drop us a line at:</p>
-					<a
-						href="mailto:Nassaragency@mailTest.com?subject=Contact"
-						class="link"
-						>Nassaragency@mail.com</a
-					>
-					<div class="social">
-						Find Us On Social Networks
-						<i class="fab fa-youtube"></i>
-						<i class="fab fa-facebook-f"></i>
-						<i class="fab fa-twitter"></i>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Contact -->
-		<!-- Start Footer -->
-		<div class="footer">
-			Họ và tên sinh viên: Nguyễn Trường Sơn
 		</div>
-		<!-- End Footer -->
-	</body>
-	<input type="hidden" id="pageNum" value="">
+	</section>
+	<!-- End Contact -->
+	<!-- Start Footer -->
+	<div class="footer">
+		&copy; Họ và tên sinh viên: Nguyễn Trường Sơn
+	</div>
+	<!-- End Footer -->
+</body>
+<input type="hidden" id="pageNum" value="">
+
 </html>
 <script type="module">
-	import { viewBanner, viewButton, viewType, viewPagi, getProducts, recentLaptop, recentPhone, recentTV } from './js/app.js'
+	import { viewBanner, viewButton, viewType, viewManufacturer, viewPagi, getProducts, recentLaptop, recentPhone, recentTV } from './js/app.js'
 	let buttonBanner = await viewButton()
-    let banner = await viewBanner()
+	let banner = await viewBanner()
 	let pagi = await viewPagi()
 	let types = await viewType()
+	let manufacturers = await viewManufacturer()
 	let phones = await getProducts(1)
 	let laptops = await recentLaptop()
 	let newPhones = await recentPhone()
 	let newTVs = await recentTV()
 	document.getElementById("viewButton").innerHTML = buttonBanner
-    document.getElementById("viewBanner").innerHTML = banner
+	document.getElementById("viewBanner").innerHTML = banner
 	document.getElementById("viewPagi").innerHTML = pagi
 	document.getElementById("viewType").innerHTML = types
+	document.getElementById("viewManufacturer").innerHTML = manufacturers
 	document.getElementById("viewPros").innerHTML = phones
 	document.getElementById("viewRecentLaptop").innerHTML = laptops
 	document.getElementById("viewRecentPhone").innerHTML = newPhones
 	document.getElementById("viewRecentTV").innerHTML = newTVs
 	let index = 1
-    window.prev = async () => {
-        if (index > 1) {
-            index--
-            let p = await getProducts(index)
-            document.getElementById("viewPros").innerHTML = p
-            console.log(index)
-        }
-    }
-    window.changePro = async (page) => {
-        index = page
-        let p = await getProducts(index)
-        document.getElementById("viewPros").innerHTML = p
-        console.log(index)
-    }
-    window.next = async () => {
-        let totalPage = document.getElementById("pageNum").getAttribute("value")
-        console.log(totalPage)
-        if (index < Number.parseInt(totalPage)) {
-            index++
-            let p = await getProducts(index)
-            document.getElementById("viewPros").innerHTML = p
-            console.log(index)
-        }
-    }
+	window.prev = async () => {
+		if (index > 1) {
+			index--
+			let p = await getProducts(index)
+			document.getElementById("viewPros").innerHTML = p
+			console.log(index)
+		}
+	}
+	window.changePro = async (page) => {
+		index = page
+		let p = await getProducts(index)
+		document.getElementById("viewPros").innerHTML = p
+		console.log(index)
+	}
+	window.next = async () => {
+		let totalPage = document.getElementById("pageNum").getAttribute("value")
+		console.log(totalPage)
+		if (index < Number.parseInt(totalPage)) {
+			index++
+			let p = await getProducts(index)
+			document.getElementById("viewPros").innerHTML = p
+			console.log(index)
+		}
+	}
 </script>

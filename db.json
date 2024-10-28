@@ -4,6 +4,14 @@
         {"id": 2, "name": "Smartphone", "icon": "fa-solid fa-mobile-screen-button"},
         {"id": 3, "name": "Laptop", "icon": "fa-solid fa-laptop"}
     ],
+    "manufacturers": [
+        {"id": 1, "name": "Samsung", "image": "samsung.png"},
+        {"id": 2, "name": "Sony", "image": "sony.png"},
+        {"id": 3, "name": "LG", "image": "lg.png"},
+        {"id": 4, "name": "Oppo", "image": "oppo.png"},
+        {"id": 5, "name": "Toshiba", "image": "toshiba.png"},
+        {"id": 6, "name": "ASUS", "image": "asus.png"}
+    ],
     "products": [
         { "id": 1, "name": "ASUS TUF", "price": 18000000, "createDate": "2024-10-13", "image": "tuf.png", "typeId": 3},
         { "id": 2, "name": "Acer Nitro 5", "price": 20000000, "createDate": "2024-10-10", "image": "nitro 5.png", "typeId": 3},

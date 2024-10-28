@@ -3,6 +3,11 @@ type type = {
     name: string,
     icon: string
 }
+type manufacturer = {
+    id: number,
+    name: string,
+    image: string
+}
 type phone = {
     id: number, 
     name: string, 
@@ -66,6 +71,22 @@ export const viewType = async () => {
             `<div class="feat">
 					<i class="${t.icon}"></i>
 					<h3>${t.name}</h3>
+            </div>`
+    });
+    return str;
+}
+export const viewManufacturer = async () => {
+    let manufacturers: manufacturer[]
+    let str: string = "";
+    manufacturers = await fetch(api + 'manufacturers').then(res => {
+        return res.json()
+    }).then(data => {
+        return data
+    })
+    manufacturers.forEach(m => {
+        str +=
+            `<div class="feat">
+					<img src="images/${m.image}" alt="">
             </div>`
     });
     return str;
@@ -226,27 +247,5 @@ export const recentTV = async () => {
                 <img src="images/avatar-tv.png" alt="" />
             </div>
         </div>`
-    return str
-}
-export const recentProduct = async () => {
-    let phones: phone[]
-    let str: string = ""
-    phones = await fetch(api + `products?_sort=-createDate`).then(res => {
-        return res.json()
-    }).then(data => {
-        return data
-    })
-    phones.forEach(p => {
-        str +=
-            `<div class="col-md-4" style="margin-bottom: 15px">
-                    <div class="card">
-                        <img src="images/${p.image}" class="card-img-top" alt="Service 1" style="height: 200px;">
-                        <div class="card-body">
-                            <h5 class="card-title">${p.name}</h5>
-                            <p class="card-text">${p.price} - ${p.createDate}</p>
-                        </div>
-                    </div>
-            </div>`
-    })
     return str
 }
