@@ -46,7 +46,26 @@ export const viewType = async () => {
     });
     typePro.forEach(t => {
         str +=
-            `<a href=${t.id}>${t.name}</a>`;
+            `<div class="feat">
+					<i class="${t.icon}"></i>
+					<h3>${t.name}</h3>
+            </div>`;
+    });
+    return str;
+};
+export const viewManufacturer = async () => {
+    let manufacturers;
+    let str = "";
+    manufacturers = await fetch(api + 'manufacturers').then(res => {
+        return res.json();
+    }).then(data => {
+        return data;
+    });
+    manufacturers.forEach(m => {
+        str +=
+            `<div class="feat">
+					<img src="images/${m.image}" alt="">
+            </div>`;
     });
     return str;
 };
@@ -89,7 +108,7 @@ export const getProducts = async (pageNum) => {
                 <div class="info">
                     <h3 style="text-align: center">${p.name}</h3>
                     <p style="text-align: center">
-                        ${p.price} VNĐ
+                        ${p.price.toLocaleString('vi-VN')}đ
                     </p>
                 </div>
             </div>`;
@@ -121,7 +140,7 @@ export const recentLaptop = async () => {
                     <div class="info">
                         <h3 style="font-size: 1rem; text-align: center">${p.name}</h3>
                         <p style="text-align: center">
-                            ${p.price} VNĐ
+                            ${p.price.toLocaleString('vi-VN')}đ
                         </p>
                     </div>
                 </div>
@@ -134,7 +153,7 @@ export const recentLaptop = async () => {
     str +=
         `<div class="col">
             <div class="image image-column">
-                <img src="images/laptop.png" alt="" />
+                <img src="images/avatar-laptop.png" alt="" />
             </div>
         </div>`;
     return str;
@@ -147,7 +166,7 @@ export const recentPhone = async () => {
     str +=
         `<div class="col">
             <div class="image image-column">
-                <img src="images/phone.png" alt="" />
+                <img src="images/avatar-phone.png" alt="" />
             </div>
         </div>`;
     phones.forEach(p => {
@@ -161,7 +180,7 @@ export const recentPhone = async () => {
                     <div class="info">
                         <h3 style="font-size: 1rem; text-align: center">${p.name}</h3>
                         <p style="text-align: center">
-                            ${p.price} VNĐ
+                            ${p.price.toLocaleString('vi-VN')}đ
                         </p>
                     </div>
                 </div>
@@ -189,7 +208,7 @@ export const recentTV = async () => {
                     <div class="info">
                         <h3 style="font-size: 1rem; text-align: center">${p.name}</h3>
                         <p style="text-align: center">
-                            ${p.price} VNĐ
+                            ${p.price.toLocaleString('vi-VN')}đ
                         </p>
                     </div>
                 </div>
@@ -202,7 +221,7 @@ export const recentTV = async () => {
     str +=
         `<div class="col">
             <div class="image image-column">
-                <img src="images/laptop.png" alt="" />
+                <img src="images/avatar-tv.png" alt="" />
             </div>
         </div>`;
     return str;
